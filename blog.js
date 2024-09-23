@@ -1,6 +1,11 @@
 
     
+const home = document.getElementById('home');
 
+home.addEventListener("click",function(){
+  window.location.href = '/index.html';
+  
+  })
 const faqItems = [
   {
     ques:'What is the Document Object Model (DOM)?',

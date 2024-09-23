@@ -17,7 +17,8 @@ function commonFunction(currentDate,inputAmount,heading,amountValue,remainAmount
     return;
    }
   else if(inputAmount <0){
-    alert('alert');
+    alert('alert'); inputValue.value = '';
+    return;
   }
   const div = document.createElement('div');
   div.classList.add('history')
