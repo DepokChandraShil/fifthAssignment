@@ -21,14 +21,19 @@
       background-color: #ABEF5F; /* Change color for active button */
       color: white;
     }
+    .history{
+      border: 1px solid gray;
+      padding: 3rem 2rem;
+      margin-bottom: 3rem;
+    }
   </style>
 </head>
 <body class="font-manrope">
-  <header>
-    <div class="flex flex-col gap-10 items-center justify-column">
+  <header class="sticky top-0 z-50 bg-slate-200">
+    <div class="flex flex-col gap-10 items-center justify-column ">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
-          <a class="btn btn-ghost text-xl font-bold bg-[#ABEF5F] border rounded px-10">Blog</a>
+          <a class="btn btn-ghost text-xl font-bold bg-[#ABEF5F] border rounded px-10" id="blog">Blog</a>
         </div>
         <div class="navbar-center">
           <div class="flex items-center justify-between"> <img src="assets/logo.png"/>
@@ -40,13 +45,13 @@
         <div class="navbar-end">
           <div class="flex items-center justify-between"> <img src="assets/coin.png"/>
             <p class="text-center  px-10 py-3 font-bold ">
-              <span id="remainAmount">5550000</span> BDT
+              <span id="remainAmount">5000</span> BDT
             </p></div>
          
         </div>
         </div>
-        <div class="mx-auto">
-          <button class="btn active" id="donationBtn">Donation</button>
+        <div class="mx-auto mb-10">
+          <button class="btn active mr-5" id="donationBtn">Donation</button>
           <button class="btn" id="historyBtn">History</button>
         </div>
        
@@ -68,13 +73,13 @@
             <div class="flex items-center justify-between border  rounded w-1/2">
                <img src="assets/coin.png" class="px-5"/>
               <p class="text-center py-2 font-bold ">
-               <span id="noakhaliAmount">5550000</span> BDT
+               <span id="noakhaliAmount">5000</span> BDT
               </p></div>
            
           </div>
           <h2 class="card-title" id="headingNoakhali">Donate for flooding affected people at Noakhali,Bangladesh</h2>
           <p>Heavy rain worsens Noakhali floods, thousands return to shelters amid relief shortage. Continuous rain on Friday and Saturday worsened the flood situation across eight upazilas of Noakhali district. The most affected upazilas are Senbagh, Begumganj, Sadar, Sonaimuri, and Chatkhil.</p>
-          <input type="number" placeholder="Type here"   id="inputNoakhaliValue"/>
+          <input type="number" placeholder="Write Donation Amount"   id="inputNoakhaliValue"class="input w-full max-w-xs"/>
           <div class="card-actions justify-end">
             <button class="btn btn-block bg-[#ABEF5F]" id="handleNoakhali" onclick="my_modal_5.showModal()">Donate Now</button>
           </div>
@@ -91,13 +96,13 @@
             <div class="flex items-center justify-between border  rounded w-1/2">
                <img src="assets/coin.png" class="px-5"/>
               <p class="text-center py-2 font-bold ">
-               <span id="feniAmount">5550000</span> BDT
+               <span id="feniAmount">5000</span> BDT
               </p></div>
            
           </div>
           <h2 class="card-title" id="headingfeni">Donate for flooding affected people at feni,Bangladesh</h2>
           <p>Heavy rain worsens feni floods, thousands return to shelters amid relief shortage. Continuous rain on Friday and Saturday worsened the flood situation across eight upazilas of feni district. The most affected upazilas are Senbagh, Begumganj, Sadar, Sonaimuri, and Chatkhil.</p>
-          <input type="number" placeholder="Type here"   id="inputfeniValue"/>
+          <input type="number" placeholder="Write Donation Amount"  id="inputfeniValue"class="input w-full max-w-xs"/>
           <div class="card-actions justify-end">
             <button class="btn btn-block bg-[#ABEF5F]" id="handlefeni" onclick="my_modal_5.showModal()">Donate Now</button>
           </div>
@@ -114,13 +119,13 @@
             <div class="flex items-center justify-between border  rounded w-1/2">
                <img src="assets/coin.png" class="px-5"/>
               <p class="text-center py-2 font-bold ">
-               <span id="quotaAmount">5550000</span> BDT
+               <span id="quotaAmount">5000</span> BDT
               </p></div>
            
           </div>
           <h2 class="card-title" id="headingquota">Donate for flooding affected people at quota,Bangladesh</h2>
           <p>Heavy rain worsens quota floods, thousands return to shelters amid relief shortage. Continuous rain on Friday and Saturday worsened the flood situation across eight upazilas of quota district. The most affected upazilas are Senbagh, Begumganj, Sadar, Sonaimuri, and Chatkhil.</p>
-          <input type="number" placeholder="Type here"   id="inputquotaValue"/>
+          <input type="number"placeholder="Write Donation Amount" id="inputquotaValue"class="input w-full max-w-xs"/>
           <div class="card-actions justify-end">
             <button class="btn btn-block bg-[#ABEF5F]" id="handlequota" onclick="my_modal_5.showModal()">Donate Now</button>
           </div>
@@ -145,7 +150,7 @@
 
 
     <section class="w-10/12" id="historySec">
-      <div id="history"class="border border-slate-300 rounded px-5 py-3 w-8/12 mx-auto mt-10 ">
+      <div id="history"class=" w-8/12 mx-auto mt-10 ">
 
       </div>
       
@@ -154,6 +159,7 @@
   </main>
  
   <script src="index.js"></script>
+  <script src="blog.js"></script>
 </body>
 </html>
 

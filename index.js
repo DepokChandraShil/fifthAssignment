@@ -1,9 +1,15 @@
 const remainAmount = document.getElementById('remainAmount');
 const donationBtn = document.getElementById('donationBtn');
 const historyBtn = document.getElementById('historyBtn');
-
 const historySec = document.getElementById('historySec');
 const donationSec = document.getElementById('donationSec');
+const blog = document.getElementById('blog');
+
+  blog.addEventListener("click",function(){
+    window.location.href = '/blog.html';
+    
+    })
+
 
 function commonFunction(currentDate,inputAmount,heading,amountValue,remainAmountValue,history,amount,inputValue){
   if(isNaN(inputAmount)){
@@ -14,8 +20,9 @@ function commonFunction(currentDate,inputAmount,heading,amountValue,remainAmount
     alert('alert');
   }
   const div = document.createElement('div');
+  div.classList.add('history')
    div.innerHTML = `
-   <h1 class="font-bold text-xl my-5">${inputAmount} ${heading}</h1>
+   <h1 class="font-bold text-xl my-5">${inputAmount} Taka is ${heading}</h1>
    <p class="text-sm text-slate-400">Date:${currentDate} </p>
    `
   amount.innerText = amountValue + inputAmount;
@@ -23,6 +30,10 @@ function commonFunction(currentDate,inputAmount,heading,amountValue,remainAmount
   history.appendChild(div);
   inputValue.value = '';
 }
+
+
+
+
 
 document.getElementById("handleNoakhali").addEventListener("click", function() {
   const noakhaliAmount =document.getElementById('noakhaliAmount');
@@ -34,7 +45,7 @@ document.getElementById("handleNoakhali").addEventListener("click", function() {
   const headingNoakhali = document.getElementById('headingNoakhali').innerText;
   const history = document.getElementById('history');
  commonFunction(currentDate,noakhaliInputAmount,headingNoakhali,noakhaliAmountValue,remainAmountValue,history,noakhaliAmount,inputNoakhaliValue);
-
+ historySec.classList.add('hidden');
   
 });
 document.getElementById("handlefeni").addEventListener("click", function() {
@@ -46,7 +57,7 @@ document.getElementById("handlefeni").addEventListener("click", function() {
   const currentDate = new Date();
   const headingfeni = document.getElementById('headingfeni').innerText;
   const history = document.getElementById('history');
-
+  historySec.classList.add('hidden');
     commonFunction(currentDate,feniInputAmount,headingfeni,feniAmountValue,remainAmountValue,history,feniAmount,inputfeniValue);
   
 });
@@ -60,6 +71,7 @@ document.getElementById("handlequota").addEventListener("click", function() {
   const currentDate = new Date();
   const headingquota = document.getElementById('headingquota').innerText;
   const history = document.getElementById('history');
+  historySec.classList.add('hidden');
     commonFunction(currentDate,quotaInputAmount,headingquota,quotaAmountValue,remainAmountValue,history,quotaAmount,inputquotaValue);
 });
 
