@@ -17,383 +17,143 @@
     .font-manrope{
       font-family: "Manrope", sans-serif;
     }
+    .active {
+      background-color: #ABEF5F; /* Change color for active button */
+      color: white;
+    }
   </style>
 </head>
 <body class="font-manrope">
   <header>
-    <div class="navbar bg-base-100 max-w-screen-2xl container mx-auto xl:px-24 px-4">
-      <div class="navbar-start">
-       
-        <div class="flex items-center justify-center">
-            <button class="bg-[#ABEF5F] w-10 h-10 text-center border border-none rounded-full -rotate-45 ">
-              <i class="fa-solid fa-arrow-right "></i>
-            </button>
-          <a class="ml-2 text-xl font-bold"> Rinterio</a>
+    <div class="flex flex-col gap-10 items-center justify-column">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-xl font-bold bg-[#ABEF5F] border rounded px-10">Blog</a>
         </div>
-        
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>Services</a></li>
-          <li><a>Portfolio</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
-          
-        </ul>
-      </div>
-      <div class="navbar-end flex items-center justify-center gap-5 max-sm:hidden">
-        <button class="w-10 h-10"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button class="w-10 h-10"><i class="fa-solid fa-cart-plus"></i></button>
-        <div class="flex items-center justify-center text-center border border-none rounded-xl bg-[#ABEF5F]">
-          <a class="p-2  text-base font-bold ml-3"> Book consult</a>
-          <button class="bg-black mx-2 w-6 h-6 text-center border border-none rounded-full -rotate-45 ">
-            <i class="fa-solid fa-arrow-right text-slate-400"></i>
-          </button>
-        
-      </div>
-        
-        
-      </div>
-      <div class="dropdown ">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-20">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
-        </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li><a>Home</a></li>
-          <li><a>Services</a></li>
-          <li><a>Portfolio</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-</header>
-  <main class=" bg-base-100 max-w-screen-2xl container mx-auto xl:px-24 px-4">
-    <section>
-      <div class="flex flex-col items-center justify-center gap-5">
-        <div class="w-8/12">
-          <img src="./assets/banner.png" class="mx-auto "/>
-        </div>
-        <div class="text-center">
-           <h1 class="text-5xl font-bold py-5 max-sm:text-3xl">Local expertise for luxury homes</h1>
-        <p class="text-base text-slate-500">Recommendations are based on your location and search activity, such as the homes you've viewed and saved and the filters you've used.</p>
-   
-        </div>
-            <div class=" flex items-center justify-center text-center border border-none rounded-xl bg-[#ABEF5F80]">
-          <a class="p-2  text-base font-bold ml-3"> view Details</a>
-          <button class="bg-[#ABEF5F] mx-2 w-6 h-6 text-center border border-none rounded-full -rotate-45 ">
-            <i class="fa-solid fa-arrow-right text-black"></i>
-          </button>
-        
-      </div>
-      </div>
-
-    </section>
-    <section class="bg-blue-50 mt-5">
-      <div class="flex max-sm:flex-col items-center justify-center gap-5 py-5 px-10">
-        <div class="w-1/2 max-sm:w-full">
-          <div class="w-full">
-            <img src="./assets/Vector.png" alt="arrow sign" class="max-sm:hidden"/>
-            <div class=" w-4/12 max-sm:w-auto flex items-center justify-center text-center border border-none rounded-xl bg-white mt-5">
-              <button class=" mx-2 w-6 h-6 text-center  ">
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
-              <a class="p-2  text-base font-bold ml-3"> About Us</a>
-            
-            
-          </div>
-          </div>
-          <div>
-            <h1 class="text-5xl font-bold py-5 max-sm:text-3xl">Local expertise for luxury homes</h1>
-        <p class="text-base text-slate-500">Recommendations are based on your location and search activity, such as the homes you've viewed and saved and the filters you've used.</p>
-          </div>
-          <div class="bg-white border border-none rounded-xl bg-white flex items-center justify-center gap-5 mt-5 p-5 ">
-              <img src="./assets/commercial.png" alt="Commercial logo"/>
-              <div>
-                <h1 class="font-bold ">Commercial</h1>
-                <p class="text-xs text-slate-500">Whether you’re searching for houses, apartments, or condos, it's easy to find a place you'll love.</p>
-              </div>
-          </div>
-          <div class="bg-white border border-none rounded-xl bg-white flex items-center justify-center gap-5 mt-5 p-5 ">
-            <img src="./assets/residential.png" alt="Residential logo"/>
-            <div>
-              <h1 class="font-bold ">Residential</h1>
-              <p class="text-xs text-slate-500">Whether you’re searching for houses, apartments, or condos, it's easy to find a place you'll love.</p>
-            </div>
-        </div>
-        </div>
-        <div class="w-1/2 max-sm:w-full">
-            <img src="./assets/Rectangle.png"/>
-        </div>
-      </div>
-      <div class="w-full ">
-        <div class="w-1/2 max-sm:w-full p-5 text-center mx-auto flex flex-col items-center justify-center">
-          <div>
-             <div class=" flex items-center justify-center text-center border border-none rounded-xl bg-white mt-5">
-            <button class=" mx-2 w-6 h-6 text-center  ">
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-            <a class="p-2  text-base font-bold ml-3"> How we Work</a>
-        </div>
-          </div>
+        <div class="navbar-center">
+          <div class="flex items-center justify-between"> <img src="assets/logo.png"/>
+            <p class="text-center  px-10 py-3 font-bold ">
+              Donate Bangladesh
+            </p></div>
          
-          <h1 class="text-3xl font-bold py-5 max-sm:text-3xl">Local expertise for luxury homes</h1>
-          <p class="text-base text-slate-500">Recommendations are based on your location and search activity, such as the homes you've viewed and saved and the filters you've used.</p>
         </div>
-        <div class="w-full flex max-sm:flex-col  items-center justify-center gap-5">
-          <div class="flex flex-col gap-3 w-3/12 max-sm:w-10/12 border border-none rounded-xl bg-[#E7C1D3] mt-5 pb-5">
-            <div class="w-full px-5 mt-5">
-                <img src="./assets/concept.png" class="w-10 h-10 "/>
-            </div>
-            <h1 class="text-lg font-bold px-5 py-2 ">Concept</h1>
-            <p class="text-sm px-5 text-slate-500">Recommendations are based on your location and search activity such as the homes</p>
-          </div>
-          <div class="flex flex-col gap-3 w-3/12 max-sm:w-10/12 border border-none rounded-xl bg-[#EFDA6E] mt-5 pb-5 ">
-            <div class="w-full px-5 mt-5">
-                <img src="./assets/flow-chart.png" class="w-10 h-10 "/>
-            </div>
-            <h1 class="text-lg font-bold px-5 py-2 ">Design Process</h1>
-            <p class="text-sm px-5 text-slate-500">Recommendations are based on your location and search activity such as the homes</p>
-          </div>
-          <div class="flex flex-col gap-3 w-3/12 border border-none rounded-xl bg-[#A4DAC3] mt-5 pb-5  max-sm:w-10/12">
-            <div class="w-full px-5 mt-5">
-                <img src="./assets/vision.png" class="w-10 h-10 "/>
-            </div>
-            <h1 class="text-lg font-bold px-5 py-2 ">Supervision</h1>
-            <p class="text-sm px-5 text-slate-500">Recommendations are based on your location and search activity such as the homes</p>
-          </div>
-          <div class="flex flex-col gap-3 w-3/12 border border-none rounded-xl bg-[#77AAEA] mt-5 pb-5  max-sm:w-10/12">
-            <div class="w-full px-5 mt-5">
-                <img src="./assets/budget-planning.png" class="w-10 h-10 "/>
-            </div>
-            <h1 class="text-lg font-bold px-5 py-2 ">Budget planning</h1>
-            <p class="text-sm px-5 text-slate-500">Recommendations are based on your location and search activity such as the homes</p>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-<section class="w-full bg-blue-50 mt-5">
-  <div class="w-full">
-      <div class="w-1/2 max-sm:w-full p-5 text-center mx-auto flex flex-col items-center justify-center">
-        <div>
-           <div class=" flex items-center justify-center text-center border border-none rounded-xl bg-[#ABEF5F33] mt-5">
-          <button class=" mx-2 w-6 h-6 text-center  ">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-          <a class="p-2  text-base font-bold ml-1"> Explore Our latest works</a>
-      </div>
-        </div>       
-        <h1 class="text-3xl font-bold py-5 max-sm:text-3xl">Our Latest Portfolio</h1>
-        <p class="text-base text-slate-500">Recommendations are based on your location and search activity, such as the homes you've viewed and saved and the filters you've used.</p>
-      </div>
-    
-    <div class="w-full flex max-sm:flex-col items-center justify-center gap-5">
-      <div class="w-9/12 max-sm:w-full bg-white flex max-sm:flex-col items-center justify-center gap-5 border border-slate-300 rounded-xl">
-        <div class="w-5/12 max-sm:w-full">
-          <img src="./assets/img1.png"class="w-72 max-sm:w-[100%] h-40 max-sm:h-56 p-5"/>
-        </div>
-        <div class="w-8/12 max-sm:w-full mb-5">
-          <div>
-            <h1 class="text-lg font-bold px-5 py-2 ">Commercial</h1>
-              <p class="text-sm px-5 text-slate-500">Recommendations are based on your location and search activity such as the homes</p>
-          </div>
-          <div class=" flex items-center">
-            <a class="p-2 text-base font-bold ml-3"> View Details</a>
-            <button class="bg-[#ABEF5F] mx-2 w-6 h-6 text-center border border-none rounded-full -rotate-45 ">
-              <i class="fa-solid fa-arrow-right text-black"></i>
-            </button>
+        <div class="navbar-end">
+          <div class="flex items-center justify-between"> <img src="assets/coin.png"/>
+            <p class="text-center  px-10 py-3 font-bold ">
+              <span id="remainAmount">5550000</span> BDT
+            </p></div>
+         
         </div>
         </div>
-      </div>
-   
-      <div class="w-3/12 max-sm:w-full border border-slate-300 rounded-xl">
-        <img src="./assets/img2.png" class="w-72 max-sm:w-[100%] h-40 max-sm:h-56 p-5"/>
-      </div>
-    </div>
-
-    <div class="w-full flex max-sm:flex-col items-center justify-center gap-4 mt-5">
-      <div class="w-3/12 max-sm:w-full border border-slate-300 rounded-xl">
-        <img src="./assets/img3.png" class="w-72 max-sm:w-[100%] h-40 max-sm:h-56 p-5"/>
-      </div>>
-      <div class="w-6/12 max-sm:w-full bg-white flex max-sm:flex-col items-center justify-center gap-5 border border-slate-300 rounded-xl">
-        <div class="w-5/12 max-sm:w-full">
-          <img src="./assets/img4.png"class="w-72 max-sm:w-[100%] h-40 max-sm:h-56 p-5"/>
+        <div class="mx-auto">
+          <button class="btn active" id="donationBtn">Donation</button>
+          <button class="btn" id="historyBtn">History</button>
         </div>
-        <div class="w-7/12 max-sm:w-full mb-5">
-          <div>
-            <h1 class="text-lg font-bold px-5 py-2 ">Commercial</h1>
-              <p class="text-sm px-5 text-slate-500">Recommendations are based on your location and search activity such as the homes</p>
-          </div>
-          <div class=" flex items-center">
-            <a class="p-2 text-base font-bold ml-3"> View Details</a>
-            <button class="bg-[#ABEF5F] mx-2 w-6 h-6 text-center border border-none rounded-full -rotate-45 ">
-              <i class="fa-solid fa-arrow-right text-black"></i>
-            </button>
-        </div>
-        </div>
-      </div>
-   
-      <div class="w-3/12 max-sm:w-full border border-slate-300 rounded-xl">
-        <img src="./assets/img5.png" class="w-72 max-sm:w-[100%] h-40 max-sm:h-56 p-5"/>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="w-full">
-
-<div class="w-full flex max-sm:flex-col justify-center items-center gap-5 max-sm:w-full border border-slate-300 rounded-xl p-8 max-sm:px-3 my-5">
-
-  <div class="w-1/2 text-center max-sm:w-full max-sm:text-left">
-    <h1 class="text-3xl  font-bold px-5 py-2 ">Challenging Part</h1>
-    <p class="text-base px-5 text-slate-500">Use Tailwind Carousel Component to effortlessly navigate through a series of elements or images. This feature-rich component offers customizable controls, indicators, intervals, and options, providing a seamless and interactive browsing experience.</p>
-  </div>
-<div class="w-1/2 max-sm:w-full border border-slate-300 rounded-xl p-8 max-sm:p-3">
-  <div class="carousel w-full">
-    <div id="slide1" class="carousel-item relative w-full ">
-      <img
-        src="./assets/article1.png"
-        class=" w-full" />
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href="#slide3" class="btn btn-circle">❮</a>
-        <a href="#slide2" class="btn btn-circle">❯</a>
-      </div>
-    </div>
-    <div id="slide2" class="carousel-item relative w-full">
-      <img
-        src="./assets/article2.png"
-        class="w-full" />
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href="#slide1" class="btn btn-circle">❮</a>
-        <a href="#slide3" class="btn btn-circle">❯</a>
-      </div>
-    </div>
-    <div id="slide3" class="carousel-item relative w-full">
-      <img
-        src="./assets//article3.png"
-        class="w-full" />
-      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href="#slide2" class="btn btn-circle">❮</a>
-        <a href="#slide1" class="btn btn-circle">❯</a>
-      </div>
-    </div>
-   
-  </div>
-</div>
- 
-
-</div>
-
-
-
-</section>
-<section>
-  <div class="bg-[url('./assets/bg.jpg')] w-full mb-5">
-    <div class="w-1/2 max-sm:w-full p-5 text-center mx-auto flex flex-col items-center justify-center">
-      <div>
-         <div class=" flex items-center justify-center text-center border border-none rounded-xl bg-[#ABEF5F33] mt-5">
-        <button class=" mx-2 w-6 h-6 text-center  ">
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-        <a class="p-2  text-base font-bold ml-1"> Let'us contact</a>
-    </div>
-      </div>       
-      <h1 class="text-3xl font-bold py-5 max-sm:text-3xl">Let us discussed about next project</h1>
-      <p class="text-base text-slate-500">Recommendations are based on your location and search activity, such as the homes you've viewed and saved and the filters you've used.</p>
-    </div>
-    <div class="w-[70%] mx-auto max-sm:w-[95%]">
-      <div class="grid grid-cols-2 gap-8 w-full max-sm:flex max-sm:flex-col">
        
-        <div>
-            
-          <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm placeholder-gray-500 border" placeholder="Your First Name*">
-      
-       </div>
-        <div>
-            
-            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm placeholder-gray-500 border"placeholder="Your Last Name*">
-        
-       </div>
-       <div>
-            
-        <input type="number" class="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm placeholder-gray-500 border"placeholder="Your Phone Number*">
-    
-     </div>
-      <div>
-          
-          <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm placeholder-gray-500 border"placeholder="Your Email*">
-      
-     </div>
-     <div class="col-span-2">
-      <textarea class="w-full textarea textarea-bordered " placeholder="Write your message here" rows="6"></textarea>
-     </div>
-     <div class="col-span-2 mb-10">
-      <div class="w-full flex items-center justify-center bg-[#ABEF5F] border border-none rounded-xl">
-        <a class="p-2 text-base font-bold ml-3"> View Details</a>
-        <button class="bg-black mx-2 w-6 h-6 text-center border border-none rounded-full -rotate-45 ">
-          <i class="fa-solid fa-arrow-right text-white"></i>
-        </button>
-    </div>
-     </div>
-    
-  </div>
-</div>
-</section>
-
-  </main>
-  <footer class=" max-w-screen-2xl container mx-auto xl:px-24 px-4 mb-5">
-    <div class="w-full  bg-[#1C1C1C] flex flex-col items-center justify-center">
-      <div class="py-14 text-center  flex flex-col justify-center items-center">
-        <div class="flex items-center justify-center py-5">
-          <button class="bg-[#ABEF5F] w-10 h-10 text-center border border-none rounded-full -rotate-45 ">
-            <i class="fa-solid fa-arrow-right "></i>
-          </button>
-        <a class="ml-2 text-xl text-white font-bold"> Rinterio</a>
-      </div>
-      <p class="text-slate-400 text-sm mx-5">
-        Real Estate Company. 166 inspirational designs, illustrations, and graphic elements from the world's best designers
-      </p>
-      </div>
-      <div class="pb-10">
-        <ul class="flex items-center justify-center gap-5 text-slate-400 max-sm:flex-col ">
-          <li class="px-5"><a>Home</a></li>
-          <li class="px-5"><a>Services</a></li>
-          <li class="px-5"><a>Portfolio</a></li>
-          <li class="px-5"><a>Blog</a></li>
-          <li class="px-5"><a>Contact</a></li>
-        </ul>
-      </div>
-      <div class="pb-10 ">
-        <div class=" flex items-center justify-center text-center border border-none rounded-xl bg-[#ABEF5F]">
-          <a class="p-2  text-base font-bold ml-3"> view Details</a>
-          <button class="bg-black mx-2 w-6 h-6 text-center border border-none rounded-full -rotate-45 ">
-            <i class="fa-solid fa-arrow-right text-white"></i>
-          </button>
-        
-      </div>
-      </div>
-            
     </div>
  
-</footer>
+     
+    
+  </header>
+  <main class="flex flex-col items-center justify-between border"> 
+    <section class="w-10/12" id="donationSec">
+         <div class="card lg:card-side bg-base-100 shadow-xl mt-10">
+        <figure class="p-10">
+          <img
+            src="assets/noakhali.png"
+            alt="Album" />
+        </figure>
+        <div class="card-body">
+          <div class="navbar-end">
+            <div class="flex items-center justify-between border  rounded w-1/2">
+               <img src="assets/coin.png" class="px-5"/>
+              <p class="text-center py-2 font-bold ">
+               <span id="noakhaliAmount">5550000</span> BDT
+              </p></div>
+           
+          </div>
+          <h2 class="card-title" id="headingNoakhali">Donate for flooding affected people at Noakhali,Bangladesh</h2>
+          <p>Heavy rain worsens Noakhali floods, thousands return to shelters amid relief shortage. Continuous rain on Friday and Saturday worsened the flood situation across eight upazilas of Noakhali district. The most affected upazilas are Senbagh, Begumganj, Sadar, Sonaimuri, and Chatkhil.</p>
+          <input type="number" placeholder="Type here"   id="inputNoakhaliValue"/>
+          <div class="card-actions justify-end">
+            <button class="btn btn-block bg-[#ABEF5F]" id="handleNoakhali" onclick="my_modal_5.showModal()">Donate Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="card lg:card-side bg-base-100 shadow-xl mt-10">
+        <figure class="p-10">
+          <img
+            src="assets/feni.png"
+            alt="Album" />
+        </figure>
+        <div class="card-body">
+          <div class="navbar-end">
+            <div class="flex items-center justify-between border  rounded w-1/2">
+               <img src="assets/coin.png" class="px-5"/>
+              <p class="text-center py-2 font-bold ">
+               <span id="feniAmount">5550000</span> BDT
+              </p></div>
+           
+          </div>
+          <h2 class="card-title" id="headingfeni">Donate for flooding affected people at feni,Bangladesh</h2>
+          <p>Heavy rain worsens feni floods, thousands return to shelters amid relief shortage. Continuous rain on Friday and Saturday worsened the flood situation across eight upazilas of feni district. The most affected upazilas are Senbagh, Begumganj, Sadar, Sonaimuri, and Chatkhil.</p>
+          <input type="number" placeholder="Type here"   id="inputfeniValue"/>
+          <div class="card-actions justify-end">
+            <button class="btn btn-block bg-[#ABEF5F]" id="handlefeni" onclick="my_modal_5.showModal()">Donate Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="card lg:card-side bg-base-100 shadow-xl mt-10">
+        <figure class="p-10">
+          <img
+            src="assets/quota-protest.png"
+            alt="Album" />
+        </figure>
+        <div class="card-body">
+          <div class="navbar-end">
+            <div class="flex items-center justify-between border  rounded w-1/2">
+               <img src="assets/coin.png" class="px-5"/>
+              <p class="text-center py-2 font-bold ">
+               <span id="quotaAmount">5550000</span> BDT
+              </p></div>
+           
+          </div>
+          <h2 class="card-title" id="headingquota">Donate for flooding affected people at quota,Bangladesh</h2>
+          <p>Heavy rain worsens quota floods, thousands return to shelters amid relief shortage. Continuous rain on Friday and Saturday worsened the flood situation across eight upazilas of quota district. The most affected upazilas are Senbagh, Begumganj, Sadar, Sonaimuri, and Chatkhil.</p>
+          <input type="number" placeholder="Type here"   id="inputquotaValue"/>
+          <div class="card-actions justify-end">
+            <button class="btn btn-block bg-[#ABEF5F]" id="handlequota" onclick="my_modal_5.showModal()">Donate Now</button>
+          </div>
+        </div>
+      </div>
+
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box flex flex-col items-center justify-center">
+          <h3 class="text-lg font-bold">Congratulations </h3>
+          <img src="assets/coin.png"/>
+          <p class="py-4">You Have Donated For Mankind</p>
+          <h4 class="text-lg font-bold">Successfully</h4>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+
+    <section class="w-10/12" id="historySec">
+      <div id="history"class="border border-slate-300 rounded px-5 py-3 w-8/12 mx-auto mt-10 ">
+
+      </div>
+      
+    </section>
+    
+  </main>
+ 
+  <script src="index.js"></script>
 </body>
 </html>
+
