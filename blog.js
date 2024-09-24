@@ -30,7 +30,7 @@ for(const faqItem of faqItems){
     div.classList.add('history');
     div.innerHTML = `
     <h1 class="font-bold text-xl my-5">${faqItem.ques}</h1>
-    <p class="text-sm text-slate-500">Date:${faqItem.ans} </p>
+    <p class="text-sm text-slate-500">${faqItem.ans} </p>
     `
     blogPara.appendChild(div);
   }
