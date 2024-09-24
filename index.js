@@ -13,11 +13,17 @@ const blog = document.getElementById('blog');
 
 function commonFunction(currentDate,inputAmount,heading,amountValue,remainAmountValue,history,amount,inputValue){
   if(isNaN(inputAmount)){
-    alert('alert');
+    alert('Enter a valid amount');
     return;
    }
   else if(inputAmount <0){
-    alert('alert'); inputValue.value = '';
+    alert('Provide a positive amount');
+     inputValue.value = '';
+    return;
+  }
+  else if(inputAmount > remainAmountValue){
+    alert('Insufficient Amount');
+     inputValue.value = '';
     return;
   }
   const div = document.createElement('div');
