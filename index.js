@@ -6,7 +6,7 @@ const donationSec = document.getElementById('donationSec');
 const blog = document.getElementById('blog');
 
   blog.addEventListener("click",function(){
-    window.location.href = '/blog.html';
+    window.location.href = 'blog.html';
     
     })
 
